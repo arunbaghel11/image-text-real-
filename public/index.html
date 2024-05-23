@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text Extraction</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Image Text Extraction</h1>
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+                <input type="file" class="form-control-file" name="image" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Upload</button>
+        </form>
+        <div id="message" class="mt-3"></div>
+       <div id="extractedText" class="mt-3">Extracted Text: <a href="extracted_text.txt" title="Download extracted text">Download</a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

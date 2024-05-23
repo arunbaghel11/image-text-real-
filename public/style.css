@@ -1,0 +1,18 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #343a40;
+}
+
+#message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #28a745;
+}
+
+#message.error {
+    color: #dc3545;
+}
